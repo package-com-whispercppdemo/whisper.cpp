@@ -18,7 +18,7 @@ jobs:
   deploy-wasm-github-pages:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${deploy.wasm.github-pages.com}$
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
